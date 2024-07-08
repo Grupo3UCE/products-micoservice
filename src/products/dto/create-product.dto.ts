@@ -9,8 +9,8 @@ export class CreateProductDto {
   @IsNumber({
     maxDecimalPlaces: 4,
   })
-  @Min(0)    //nose permite el cero validacion
-  @Type(() => Number ) //transforma a number sino da error
+  @Min(0)
+  @Type(() => Number )
   public price: number;
 
 }
